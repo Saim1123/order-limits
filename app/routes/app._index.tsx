@@ -30,9 +30,7 @@ export default function Index() {
           <h2>Hello Saim Tahir</h2>
 
           <div style={{ display: "flex", gap: "4px" }}>
-            <s-button commandFor="language-menu">
-              English
-            </s-button>
+            <s-button commandFor="language-menu">English</s-button>
 
             <s-menu id="language-menu" accessibilityLabel="Language actions">
               <s-button icon="language">English</s-button>
@@ -53,13 +51,20 @@ export default function Index() {
             gap="small"
             justifyContent="center"
           >
-            <s-grid-item gridColumn="auto" border="base" borderRadius="small" padding="small">
+            <s-grid-item
+              gridColumn="auto"
+              border="base"
+              borderRadius="small"
+              padding="small"
+              background="subdued"
+            >
               <s-stack gap="small">
                 <s-image
                   src="https://order.samita.io/src/assets/images/order-limit.png"
                   alt="Indoor plant"
                   borderRadius="small"
-                  border="base"
+                  aspectRatio="2/1.5"
+                  objectFit="cover"
                 />
                 <s-stack direction="inline" justifyContent="space-between">
                   <s-heading>Create your first rule?</s-heading>
@@ -67,21 +72,31 @@ export default function Index() {
                 </s-stack>
 
                 <s-paragraph>
-                  With simple rule, the app controls the number of orders, helping you manage your store's traffic and sales. Learn more
+                  With simple rule, the app controls the number of orders,
+                  helping you manage your store&apos;s traffic and sales.
                 </s-paragraph>
               </s-stack>
             </s-grid-item>
-            <s-grid-item gridColumn="auto" border="base" borderRadius="small" padding="small">
+            <s-grid-item
+              gridColumn="auto"
+              border="base"
+              borderRadius="small"
+              padding="small"
+              background="subdued"
+            >
               <s-stack gap="small">
                 <s-image
                   src="https://order.samita.io/src/assets/images/integrate-theme.png"
                   alt="Indoor plant"
                   borderRadius="small"
-                  border="base"
+                  aspectRatio="2/1.5"
+                  objectFit="cover"
                 />
                 <s-stack direction="inline" justifyContent="space-between">
                   <s-heading>App status</s-heading>
-                  <s-button variant="primary" inlineSize="auto">Enabled</s-button>
+                  <s-button variant="primary" inlineSize="auto">
+                    Enabled
+                  </s-button>
                 </s-stack>
 
                 <s-paragraph>
